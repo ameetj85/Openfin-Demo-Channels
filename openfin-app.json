@@ -1,0 +1,17 @@
+{
+  "devtools_port": 9090,
+  "startup_app": {
+    "name": "app-1666434539004-4311",
+    "icon": "http://cdn.openfin.co/YourApp/favicon.ico",
+    "url": "http://localhost:5000",
+    "uuid": "app-1666434539004-4311",
+    "saveWindowState": true,
+    "backgroundColor": "#fffff",
+    "autoShow": true
+  },
+  "taskbarIconGroup": "myApp",
+  "loadErrorMessage": "There was an error loading the application.",
+  "runtime": {
+    "version": "stable"
+  }
+}
