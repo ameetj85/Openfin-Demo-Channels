@@ -1,13 +1,10 @@
-# Openfin_Demo
+# Openfin Demo using Channels
 
 # Install OpenFin CLI 
 npm install -g openfin-cli
 
 # Download code and run npm for node_modules
 npm install
-
-# Build app
-npm build
 
 # Run node to start up app
 node server.js
