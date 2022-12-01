@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.korzh.com/metroui/v4.5.1/css/metro-all.min.css"
+    />
+    <style type="text/css">
+      body {
+        margin: 30px;
+        overflow: hidden; /* Hide scrollbars */
+        background-color: whitesmoke;
+      }
+    </style>
+    <div id="openFinVer"></div>
+    <br />
+    <br />
+  </head>
+
+  <body>
+    <button id="create-channel">
+      Create Channel
+    </button>
+    <input type="button" id="createChild" value="Create Child Window" />
+    <input
+      id="close_window"
+      type="button"
+      class="btn btn-success"
+      style="font-weight: bold; display: inline"
+      onclick="closeApp()"
+      value="Close Application"
+    />
+    <br /><br />
+    <form>
+      <table class="table table-border cell-border">
+        <tr>
+          <th>First Number:</th>
+          <th><input type="number" id="firstNumber" /></th>
+        </tr>
+        <tr>
+          <th>Second Number:</th>
+          <th><input type="number" id="secondNumber" /></th>
+        </tr>
+      </table>
+
+      <br />
+      <br />
+      <input type="button" id="executeOp" value="Compute Values" />
+      <br />
+      <br />
+
+      <table class="table table-border cell-border">
+        <tr>
+          <th>Operation</th>
+          <th>Result</th>
+          <th>Verification</th>
+        </tr>
+        <tr>
+          <td>Addition</td>
+          <td id="addValue"></td>
+          <td id="addVerify"></td>
+        </tr>
+        <tr>
+          <td>Subtraction</td>
+          <td id="subValue"></td>
+          <td id="subVerify"></td>
+        </tr>
+        <tr>
+          <td>Multiplication</td>
+          <td id="multValue"></td>
+          <td id="multVerify"></td>
+        </tr>
+        <tr>
+          <td>Division</td>
+          <td id="divValue"></td>
+          <td id="divVerify"></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
+<script src="js/index.js"></script>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.korzh.com/metroui/v4.5.1/css/metro-all.min.css"
+    />
+    <style type="text/css">
+      body {
+        margin: 30px;
+        overflow: hidden; /* Hide scrollbars */
+        background-color: whitesmoke;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <title id="childTitle"></title>
+  </head>
+
+  <body>
+    <label for="cars">Choose a message to subscribe to:</label>
+
+    <select id="selectOp" onchange="if (this.selectedIndex > 0) setListener();">
+      <option value="">Please select a value</option>
+      <option value="add">Addition</option>
+      <option value="subtract">Subtraction</option>
+      <option value="multiply">Multiplication</option>
+      <option value="divide">Division</option>
+    </select>
+
+    <div id="inter-app-message">Messages appear here magically!</div>
+    <br />
+    <input type="button" id="sendAck" value="Send Response" />
+  </body>
+</html>
+<script type="text/javascript" src="js/child.js"></script>
